@@ -1,1 +1,6 @@
-https://final-project-6-frontend-webdevt.vercel.app/api/health
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://final-project-6-backend-webdevt.onrender.com/api/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
